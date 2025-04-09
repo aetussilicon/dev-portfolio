@@ -6,7 +6,7 @@ const Apresentation = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className='flex justify-between p-4 items-center'
+            className='flex justify-between items-center'
         >
             <div className='font-extrabold text-5xl text-gray-700'>
                 <h1>
