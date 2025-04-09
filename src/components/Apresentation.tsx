@@ -1,11 +1,8 @@
-import { motion } from 'framer-motion';
+
 
 const Apresentation = () => {
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
+        <div
             className='flex justify-between items-center'
         >
             <div className='font-extrabold text-5xl text-gray-700'>
@@ -23,10 +20,10 @@ const Apresentation = () => {
             <div className='p-2.5 rounded-full bg-gradient-to-r from-purple-400 to-purple-900 inline-block'>
                 <div
                     style={{ backgroundImage: 'url("/placeholder.jpg")' }}
-                    className='w-100 h-100 bg-cover rounded-full bg-center'
+                    className='w-80 h-80 bg-cover rounded-full bg-center'
                 />
             </div>
-        </motion.div>
+        </div>
     );
 };
 
