@@ -1,4 +1,5 @@
 import { Link } from 'lucide-react';
+import { motion } from 'framer-motion';
 import React from 'react';
 
 interface ProjectsCardProps {
@@ -22,7 +23,11 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
 }) => {
     return (
         <>
-            <div className='h-120 w-80 bg-white drop-shadow-2xl rounded-xl flex flex-col overflow-hidden'>
+            <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                className='h-120 w-80 bg-white drop-shadow-2xl rounded-xl flex flex-col overflow-hidden'
+            >
                 <div style={{ backgroundImage: `url('${image}')` }} className='h-2/5 bg-center bg-cover rounded-t-xl' />
 
                 <div className='flex flex-col justify-between p-4 h-3/5'>
@@ -47,7 +52,7 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     );
 };
